@@ -8,13 +8,13 @@ function component() {
 
   bg.classList.add('bg');
 
-  element.innerHTML = 'Hello webpack!'
+  element.innerHTML = 'webpack config'
 
   btn.innerHTML = 'Click me and check the console!';
   btn.onclick = printMe();
 
-  element.appendChild(btn);
   bg.appendChild(element);
+  bg.appendChild(btn);
 
   return bg;
  }

@@ -6,19 +6,21 @@ module.exports = {
   entry: "./src/index.js",
 
   plugins: [
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+      filename: '[name].[chunkhash].css'
+    }),
     new HtmlWebpackPlugin({
-      title: 'Custom template',
       template: path.resolve(__dirname, 'src', 'index.html'),
     }),
   ],
 
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js',
+    filename: '[name].[chunkhash].js',
     clean: true,
     assetModuleFilename: "images/[contenthash][ext][query]",
   },
+
   module: {
     rules: [
       {
