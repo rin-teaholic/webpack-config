@@ -53,7 +53,6 @@ module.exports = {
       {
         test: /\.html/,
         loader: "html-loader",
-        // type: 'asset/resource',
         generator: {
           filename: '[name][ext][query]'
         }

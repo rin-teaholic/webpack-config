@@ -1,9 +1,10 @@
 @use 'global';
 
-.hero {
+.bg {
     background-image: url(../images/wp.png);
     background-size: cover;
     background-position: center;
-    min-height: 300px;
+    max-width: 500px;
     width: 100%;
+    height: 500px;
 }

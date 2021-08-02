@@ -1,12 +1,12 @@
 import './styles/index.scss'
-import './scripts/sub'
+import printMe from './scripts/sub'
 
 function component() {
   const bg = document.createElement('div');
   const element = document.createElement('h1');
   const btn = document.createElement('button');
 
-  bg.classList.add('hero');
+  bg.classList.add('bg');
 
   element.innerHTML = 'Hello webpack!'
 
